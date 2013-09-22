@@ -2,8 +2,10 @@
 #if !defined(__cplusplus)
 #include "stdbool.h" /* C doesn't have booleans by default. */
 #endif
-#include <stddef.h>
-#include <stdint.h>
+typedef unsigned int uint16_t;
+typedef unsigned int size_t;
+typedef unsigned char uint8_t;
+
 
 /* Check if the compiler thinks if we are targeting the wrong operating system. */
 #if defined(__linux__)
